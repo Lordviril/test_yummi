@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'test_yummy' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  pod 'Alamofire',                            '4.9.0'
+  pod 'lottie-ios',                           '3.1.8'
+  pod 'SDWebImage',                           '5.6.1'
+  # Pods for test_yummy
+
+  target 'test_yummyTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'test_yummyUITests' do
+    # Pods for testing
+  end
+
+end
