@@ -1,0 +1,12 @@
+//
+//  qa.xcconfig
+//  test_yummy
+//
+//  Created by pedro.daza on 24/10/21.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+API_KEY = m9loOd79vKI0ArBwtmhX2gOGRQbIMi7vNttpIzaR
+BASE_UREL = https:/$()/api.nasa.gov
+URL_APOD = BASE_UREL + /planetary/apod

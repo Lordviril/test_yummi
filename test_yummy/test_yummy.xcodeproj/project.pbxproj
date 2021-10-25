@@ -26,6 +26,10 @@
 		0C114E8D272648F600D7913F /* ListPictoresProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C114E8B272648F600D7913F /* ListPictoresProtocols.swift */; };
 		0C114E8E272648F600D7913F /* ListPictoresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C114E8C272648F600D7913F /* ListPictoresViewModel.swift */; };
 		0C114E902726491500D7913F /* NASAPictore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C114E8F2726491500D7913F /* NASAPictore.swift */; };
+		0C114E9327264B0D00D7913F /* prod.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 0C114E9127264B0D00D7913F /* prod.xcconfig */; };
+		0C114E9427264B0D00D7913F /* dev.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 0C114E9227264B0D00D7913F /* dev.xcconfig */; };
+		0C114EA927264EA600D7913F /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C114EA827264EA500D7913F /* ApiService.swift */; };
+		0C114EAB27264EB300D7913F /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C114EAA27264EB300D7913F /* ApiResponse.swift */; };
 		3A5F078A58DDACF67238F168 /* Pods_test_yummy_test_yummyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D554810E4F785CB40E9975A2 /* Pods_test_yummy_test_yummyUITests.framework */; };
 		DFE77546B8B67CB317BACE5F /* Pods_test_yummy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 598EC9C31CA121686EE08835 /* Pods_test_yummy.framework */; };
 		EBDAFC0D29B28DC010BB5DD8 /* Pods_test_yummyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F860F39F3E2BFC6EDF0314A /* Pods_test_yummyTests.framework */; };
@@ -74,13 +78,30 @@
 		0C114E8B272648F600D7913F /* ListPictoresProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPictoresProtocols.swift; sourceTree = "<group>"; };
 		0C114E8C272648F600D7913F /* ListPictoresViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPictoresViewModel.swift; sourceTree = "<group>"; };
 		0C114E8F2726491500D7913F /* NASAPictore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NASAPictore.swift; sourceTree = "<group>"; };
+		0C114E9127264B0D00D7913F /* prod.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = prod.xcconfig; sourceTree = "<group>"; };
+		0C114E9227264B0D00D7913F /* dev.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = dev.xcconfig; sourceTree = "<group>"; };
+		0C114E9527264C5800D7913F /* qa.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = qa.xcconfig; sourceTree = "<group>"; };
+		0C114EA827264EA500D7913F /* ApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		0C114EAA27264EB300D7913F /* ApiResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
+		1F357434484BCF180FC4E531 /* Pods-test_yummy.debug(dev).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_yummy.debug(dev).xcconfig"; path = "Target Support Files/Pods-test_yummy/Pods-test_yummy.debug(dev).xcconfig"; sourceTree = "<group>"; };
 		1F860F39F3E2BFC6EDF0314A /* Pods_test_yummyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_test_yummyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2678DDCA252A7443712C89BC /* Pods-test_yummy-test_yummyUITests.debug(qa).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_yummy-test_yummyUITests.debug(qa).xcconfig"; path = "Target Support Files/Pods-test_yummy-test_yummyUITests/Pods-test_yummy-test_yummyUITests.debug(qa).xcconfig"; sourceTree = "<group>"; };
+		299DCF47EADF5DF0676048B7 /* Pods-test_yummy-test_yummyUITests.debug(dev).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_yummy-test_yummyUITests.debug(dev).xcconfig"; path = "Target Support Files/Pods-test_yummy-test_yummyUITests/Pods-test_yummy-test_yummyUITests.debug(dev).xcconfig"; sourceTree = "<group>"; };
+		33A76AD6ADD3FDD788E5A9BC /* Pods-test_yummy.debug(qa).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_yummy.debug(qa).xcconfig"; path = "Target Support Files/Pods-test_yummy/Pods-test_yummy.debug(qa).xcconfig"; sourceTree = "<group>"; };
 		33C3A4A8AC23E8C91F2216F6 /* Pods-test_yummyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_yummyTests.debug.xcconfig"; path = "Target Support Files/Pods-test_yummyTests/Pods-test_yummyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3B297969CE033B1246397D24 /* Pods-test_yummy.release(qa).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_yummy.release(qa).xcconfig"; path = "Target Support Files/Pods-test_yummy/Pods-test_yummy.release(qa).xcconfig"; sourceTree = "<group>"; };
+		4370A8545BC6CA5A8E38E789 /* Pods-test_yummy-test_yummyUITests.realese(prod).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_yummy-test_yummyUITests.realese(prod).xcconfig"; path = "Target Support Files/Pods-test_yummy-test_yummyUITests/Pods-test_yummy-test_yummyUITests.realese(prod).xcconfig"; sourceTree = "<group>"; };
 		598EC9C31CA121686EE08835 /* Pods_test_yummy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_test_yummy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65F010E28D6531D9C9FEE848 /* Pods-test_yummy-test_yummyUITests.release(qa).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_yummy-test_yummyUITests.release(qa).xcconfig"; path = "Target Support Files/Pods-test_yummy-test_yummyUITests/Pods-test_yummy-test_yummyUITests.release(qa).xcconfig"; sourceTree = "<group>"; };
+		686B6863298B80A8323607B1 /* Pods-test_yummyTests.debug(dev).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_yummyTests.debug(dev).xcconfig"; path = "Target Support Files/Pods-test_yummyTests/Pods-test_yummyTests.debug(dev).xcconfig"; sourceTree = "<group>"; };
 		7682EA2E49425BD1CC033642 /* Pods-test_yummy-test_yummyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_yummy-test_yummyUITests.release.xcconfig"; path = "Target Support Files/Pods-test_yummy-test_yummyUITests/Pods-test_yummy-test_yummyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		870E118D888CD08350F7610E /* Pods-test_yummy-test_yummyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_yummy-test_yummyUITests.debug.xcconfig"; path = "Target Support Files/Pods-test_yummy-test_yummyUITests/Pods-test_yummy-test_yummyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		96504BED5C7A186459E1AA73 /* Pods-test_yummyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_yummyTests.release.xcconfig"; path = "Target Support Files/Pods-test_yummyTests/Pods-test_yummyTests.release.xcconfig"; sourceTree = "<group>"; };
 		98DE14971DE750AD7DB588CF /* Pods-test_yummy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_yummy.release.xcconfig"; path = "Target Support Files/Pods-test_yummy/Pods-test_yummy.release.xcconfig"; sourceTree = "<group>"; };
+		A081DE2974873AF239FF8BE2 /* Pods-test_yummy.realese(prod).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_yummy.realese(prod).xcconfig"; path = "Target Support Files/Pods-test_yummy/Pods-test_yummy.realese(prod).xcconfig"; sourceTree = "<group>"; };
+		A3A309B117AEE15742A46193 /* Pods-test_yummyTests.debug(qa).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_yummyTests.debug(qa).xcconfig"; path = "Target Support Files/Pods-test_yummyTests/Pods-test_yummyTests.debug(qa).xcconfig"; sourceTree = "<group>"; };
+		D093D8F9832F85E9372FB195 /* Pods-test_yummyTests.realese(prod).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_yummyTests.realese(prod).xcconfig"; path = "Target Support Files/Pods-test_yummyTests/Pods-test_yummyTests.realese(prod).xcconfig"; sourceTree = "<group>"; };
+		D4745530C3A3985E5FF8C44C /* Pods-test_yummyTests.release(qa).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_yummyTests.release(qa).xcconfig"; path = "Target Support Files/Pods-test_yummyTests/Pods-test_yummyTests.release(qa).xcconfig"; sourceTree = "<group>"; };
 		D554810E4F785CB40E9975A2 /* Pods_test_yummy_test_yummyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_test_yummy_test_yummyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFB38EA4D74848BC179E4475 /* Pods-test_yummy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_yummy.debug.xcconfig"; path = "Target Support Files/Pods-test_yummy/Pods-test_yummy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,8 +167,6 @@
 				0C114E6E272637B700D7913F /* View */,
 				0C114E6C272637A400D7913F /* ViewModel */,
 				0C114E6B2726378B00D7913F /* Model */,
-				0C114E3F2726327900D7913F /* ViewController.swift */,
-				0C114E412726327900D7913F /* Main.storyboard */,
 				0C114E442726327B00D7913F /* Assets.xcassets */,
 				0C114E462726327B00D7913F /* LaunchScreen.storyboard */,
 				0C114E492726327B00D7913F /* Info.plist */,
@@ -192,6 +211,7 @@
 		0C114E6E272637B700D7913F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0C114EAC272651CB00D7913F /* Enter */,
 				0C114E802726471000D7913F /* ListPictores */,
 			);
 			path = View;
@@ -207,6 +227,8 @@
 		0C114E70272637EA00D7913F /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				0C114EA727264E9A00D7913F /* Api */,
+				0C114EA627264E9000D7913F /* CustomRepository */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -214,6 +236,9 @@
 		0C114E71272637F900D7913F /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				0C114E9227264B0D00D7913F /* dev.xcconfig */,
+				0C114E9527264C5800D7913F /* qa.xcconfig */,
+				0C114E9127264B0D00D7913F /* prod.xcconfig */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -298,6 +323,31 @@
 			path = ListPictores;
 			sourceTree = "<group>";
 		};
+		0C114EA627264E9000D7913F /* CustomRepository */ = {
+			isa = PBXGroup;
+			children = (
+				0C114EAA27264EB300D7913F /* ApiResponse.swift */,
+			);
+			path = CustomRepository;
+			sourceTree = "<group>";
+		};
+		0C114EA727264E9A00D7913F /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				0C114EA827264EA500D7913F /* ApiService.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		0C114EAC272651CB00D7913F /* Enter */ = {
+			isa = PBXGroup;
+			children = (
+				0C114E3F2726327900D7913F /* ViewController.swift */,
+				0C114E412726327900D7913F /* Main.storyboard */,
+			);
+			path = Enter;
+			sourceTree = "<group>";
+		};
 		4B476A410AA9CFE3792FF828 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -307,6 +357,18 @@
 				7682EA2E49425BD1CC033642 /* Pods-test_yummy-test_yummyUITests.release.xcconfig */,
 				33C3A4A8AC23E8C91F2216F6 /* Pods-test_yummyTests.debug.xcconfig */,
 				96504BED5C7A186459E1AA73 /* Pods-test_yummyTests.release.xcconfig */,
+				33A76AD6ADD3FDD788E5A9BC /* Pods-test_yummy.debug(qa).xcconfig */,
+				1F357434484BCF180FC4E531 /* Pods-test_yummy.debug(dev).xcconfig */,
+				A081DE2974873AF239FF8BE2 /* Pods-test_yummy.realese(prod).xcconfig */,
+				3B297969CE033B1246397D24 /* Pods-test_yummy.release(qa).xcconfig */,
+				2678DDCA252A7443712C89BC /* Pods-test_yummy-test_yummyUITests.debug(qa).xcconfig */,
+				299DCF47EADF5DF0676048B7 /* Pods-test_yummy-test_yummyUITests.debug(dev).xcconfig */,
+				4370A8545BC6CA5A8E38E789 /* Pods-test_yummy-test_yummyUITests.realese(prod).xcconfig */,
+				65F010E28D6531D9C9FEE848 /* Pods-test_yummy-test_yummyUITests.release(qa).xcconfig */,
+				A3A309B117AEE15742A46193 /* Pods-test_yummyTests.debug(qa).xcconfig */,
+				686B6863298B80A8323607B1 /* Pods-test_yummyTests.debug(dev).xcconfig */,
+				D093D8F9832F85E9372FB195 /* Pods-test_yummyTests.realese(prod).xcconfig */,
+				D4745530C3A3985E5FF8C44C /* Pods-test_yummyTests.release(qa).xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -429,7 +491,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C114E9327264B0D00D7913F /* prod.xcconfig in Resources */,
 				0C114E852726473700D7913F /* ApodCollectionViewCell.xib in Resources */,
+				0C114E9427264B0D00D7913F /* dev.xcconfig in Resources */,
 				0C114E482726327B00D7913F /* LaunchScreen.storyboard in Resources */,
 				0C114E452726327B00D7913F /* Assets.xcassets in Resources */,
 				0C114E88272647E500D7913F /* ListPictores.storyboard in Resources */,
@@ -564,8 +628,10 @@
 			files = (
 				0C114E7E2726399800D7913F /* SwiftSpinner.swift in Sources */,
 				0C114E8E272648F600D7913F /* ListPictoresViewModel.swift in Sources */,
+				0C114EA927264EA600D7913F /* ApiService.swift in Sources */,
 				0C114E402726327900D7913F /* ViewController.swift in Sources */,
 				0C114E8D272648F600D7913F /* ListPictoresProtocols.swift in Sources */,
+				0C114EAB27264EB300D7913F /* ApiResponse.swift in Sources */,
 				0C114E902726491500D7913F /* NASAPictore.swift in Sources */,
 				0C114E842726473700D7913F /* ApodCollectionViewCell.swift in Sources */,
 				0C114E3C2726327900D7913F /* AppDelegate.swift in Sources */,
@@ -871,6 +937,498 @@
 			};
 			name = Release;
 		};
+		0C114E9627264D0900D7913F /* Debug(dev) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C114E9227264B0D00D7913F /* dev.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug(dev)";
+		};
+		0C114E9727264D0900D7913F /* Debug(dev) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F357434484BCF180FC4E531 /* Pods-test_yummy.debug(dev).xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56DJML2ZXR;
+				INFOPLIST_FILE = test_yummy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yummy.test-yummy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug(dev)";
+		};
+		0C114E9827264D0900D7913F /* Debug(dev) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 686B6863298B80A8323607B1 /* Pods-test_yummyTests.debug(dev).xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56DJML2ZXR;
+				INFOPLIST_FILE = test_yummyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yummy.test-yummyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/test_yummy.app/test_yummy";
+			};
+			name = "Debug(dev)";
+		};
+		0C114E9927264D0900D7913F /* Debug(dev) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 299DCF47EADF5DF0676048B7 /* Pods-test_yummy-test_yummyUITests.debug(dev).xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56DJML2ZXR;
+				INFOPLIST_FILE = test_yummyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yummy.test-yummyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = test_yummy;
+			};
+			name = "Debug(dev)";
+		};
+		0C114E9A27264D2200D7913F /* Debug(qa) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C114E9527264C5800D7913F /* qa.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug(qa)";
+		};
+		0C114E9B27264D2200D7913F /* Debug(qa) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33A76AD6ADD3FDD788E5A9BC /* Pods-test_yummy.debug(qa).xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56DJML2ZXR;
+				INFOPLIST_FILE = test_yummy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yummy.test-yummy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug(qa)";
+		};
+		0C114E9C27264D2200D7913F /* Debug(qa) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3A309B117AEE15742A46193 /* Pods-test_yummyTests.debug(qa).xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56DJML2ZXR;
+				INFOPLIST_FILE = test_yummyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yummy.test-yummyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/test_yummy.app/test_yummy";
+			};
+			name = "Debug(qa)";
+		};
+		0C114E9D27264D2200D7913F /* Debug(qa) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2678DDCA252A7443712C89BC /* Pods-test_yummy-test_yummyUITests.debug(qa).xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56DJML2ZXR;
+				INFOPLIST_FILE = test_yummyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yummy.test-yummyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = test_yummy;
+			};
+			name = "Debug(qa)";
+		};
+		0C114E9E27264D3100D7913F /* Release(qa) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C114E9527264C5800D7913F /* qa.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release(qa)";
+		};
+		0C114E9F27264D3100D7913F /* Release(qa) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B297969CE033B1246397D24 /* Pods-test_yummy.release(qa).xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56DJML2ZXR;
+				INFOPLIST_FILE = test_yummy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yummy.test-yummy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release(qa)";
+		};
+		0C114EA027264D3100D7913F /* Release(qa) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4745530C3A3985E5FF8C44C /* Pods-test_yummyTests.release(qa).xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56DJML2ZXR;
+				INFOPLIST_FILE = test_yummyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yummy.test-yummyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/test_yummy.app/test_yummy";
+			};
+			name = "Release(qa)";
+		};
+		0C114EA127264D3100D7913F /* Release(qa) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65F010E28D6531D9C9FEE848 /* Pods-test_yummy-test_yummyUITests.release(qa).xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56DJML2ZXR;
+				INFOPLIST_FILE = test_yummyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yummy.test-yummyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = test_yummy;
+			};
+			name = "Release(qa)";
+		};
+		0C114EA227264D3C00D7913F /* Realese(prod) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C114E9127264B0D00D7913F /* prod.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Realese(prod)";
+		};
+		0C114EA327264D3C00D7913F /* Realese(prod) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A081DE2974873AF239FF8BE2 /* Pods-test_yummy.realese(prod).xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56DJML2ZXR;
+				INFOPLIST_FILE = test_yummy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yummy.test-yummy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Realese(prod)";
+		};
+		0C114EA427264D3C00D7913F /* Realese(prod) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D093D8F9832F85E9372FB195 /* Pods-test_yummyTests.realese(prod).xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56DJML2ZXR;
+				INFOPLIST_FILE = test_yummyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yummy.test-yummyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/test_yummy.app/test_yummy";
+			};
+			name = "Realese(prod)";
+		};
+		0C114EA527264D3C00D7913F /* Realese(prod) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4370A8545BC6CA5A8E38E789 /* Pods-test_yummy-test_yummyUITests.realese(prod).xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56DJML2ZXR;
+				INFOPLIST_FILE = test_yummyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yummy.test-yummyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = test_yummy;
+			};
+			name = "Realese(prod)";
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -878,7 +1436,11 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0C114E602726327B00D7913F /* Debug */,
+				0C114E9A27264D2200D7913F /* Debug(qa) */,
+				0C114E9627264D0900D7913F /* Debug(dev) */,
 				0C114E612726327B00D7913F /* Release */,
+				0C114EA227264D3C00D7913F /* Realese(prod) */,
+				0C114E9E27264D3100D7913F /* Release(qa) */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -887,7 +1449,11 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0C114E632726327B00D7913F /* Debug */,
+				0C114E9B27264D2200D7913F /* Debug(qa) */,
+				0C114E9727264D0900D7913F /* Debug(dev) */,
 				0C114E642726327B00D7913F /* Release */,
+				0C114EA327264D3C00D7913F /* Realese(prod) */,
+				0C114E9F27264D3100D7913F /* Release(qa) */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -896,7 +1462,11 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0C114E662726327B00D7913F /* Debug */,
+				0C114E9C27264D2200D7913F /* Debug(qa) */,
+				0C114E9827264D0900D7913F /* Debug(dev) */,
 				0C114E672726327B00D7913F /* Release */,
+				0C114EA427264D3C00D7913F /* Realese(prod) */,
+				0C114EA027264D3100D7913F /* Release(qa) */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -905,7 +1475,11 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0C114E692726327B00D7913F /* Debug */,
+				0C114E9D27264D2200D7913F /* Debug(qa) */,
+				0C114E9927264D0900D7913F /* Debug(dev) */,
 				0C114E6A2726327B00D7913F /* Release */,
+				0C114EA527264D3C00D7913F /* Realese(prod) */,
+				0C114EA127264D3100D7913F /* Release(qa) */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -62,8 +62,7 @@ extension ListPictoresViewController: UICollectionViewDelegate, UICollectionView
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        self.nasaPictore = self.nasaPictores[indexPath.row]
-        performSegue(withIdentifier: Constants.SHOW_DETAIL, sender: nil)
+
     }
     
     
@@ -94,7 +93,7 @@ extension ListPictoresViewController: InformationHealthyLifeViewToViewModel {
     }
     
     func showError(error: String) {
-        shoeAlertWithMessagge(controller: self, messagge: error)
+
     }
     
     

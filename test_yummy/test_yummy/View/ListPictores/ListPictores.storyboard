@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="War-gk-bj9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="War-gk-bj9">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,7 +12,7 @@
         <!--List Pictores View Controller-->
         <scene sceneID="Usr-CB-ukX">
             <objects>
-                <viewController id="War-gk-bj9" customClass="ListPictoresViewController" customModule="TestSoyYo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="War-gk-bj9" customClass="ListPictoresViewController" customModule="test_yummy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fQ1-OR-YjB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -35,7 +36,7 @@
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IIe-dh-xBr">
                                 <rect key="frame" x="25" y="86" width="364" height="776"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" sectionInsetReference="layoutMargins" id="pn8-me-X7b">
                                     <size key="itemSize" width="150" height="200"/>
                                     <size key="estimatedItemSize" width="128" height="128"/>
@@ -55,7 +56,8 @@
                                 </cells>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Ugw-uK-gHl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Ugw-uK-gHl" firstAttribute="trailing" secondItem="aLh-ZK-4Zc" secondAttribute="trailing" constant="25" id="7GV-0D-oR6"/>
                             <constraint firstItem="aLh-ZK-4Zc" firstAttribute="centerY" secondItem="gC5-YZ-afG" secondAttribute="centerY" id="Fi2-Ve-dGX"/>
@@ -67,28 +69,21 @@
                             <constraint firstItem="Ugw-uK-gHl" firstAttribute="bottom" secondItem="IIe-dh-xBr" secondAttribute="bottom" id="vdT-C5-dhC"/>
                             <constraint firstItem="aLh-ZK-4Zc" firstAttribute="leading" secondItem="gC5-YZ-afG" secondAttribute="trailing" constant="2" id="yNL-KG-itK"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Ugw-uK-gHl"/>
                     </view>
                     <connections>
                         <outlet property="apodCollectionView" destination="IIe-dh-xBr" id="6aH-El-Y21"/>
                         <outlet property="insertDateTextField" destination="gC5-YZ-afG" id="Hua-R3-UH8"/>
-                        <segue destination="Nn8-BH-PS8" kind="presentation" identifier="showDetail" id="rrs-v2-ktZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DZp-Ki-TH7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="113" y="40"/>
         </scene>
-        <!--DetailPictore-->
-        <scene sceneID="yHP-ky-dcv">
-            <objects>
-                <viewControllerPlaceholder storyboardName="DetailPictore" id="Nn8-BH-PS8" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="32P-lF-0J1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="675" y="-144"/>
-        </scene>
     </scenes>
     <resources>
         <image name="ic_calender" width="18" height="18"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
