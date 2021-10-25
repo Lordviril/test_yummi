@@ -40,18 +40,11 @@ class ListPictoresViewController: UIViewController {
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
-        if segue.identifier == Constants.SHOW_DETAIL{
-            if let detailPictoreViewController = segue.destination as? DetailPictoreViewController {
-                detailPictoreViewController.nasaPictore = self.nasaPictore
-            }
-        }
+
     }
     // MARK: - Actions
     @IBAction func showDatePicker(_ sender: UIButton) {
-        showDatePickerFromPictore(controller: self, ok: {date in
-            self.insertDateTextField.text = self.listPictoresViewModel?.getDateFormat(date: date)
-            self.listPictoresViewModel?.getPictores(controller: self, datePictores: date)
-        })
+
     }
 }
 // MARK: - CollectionView
