@@ -15,4 +15,5 @@ public enum Constants {
     // MARK: - NibNames for Reusable UICollectionView Cells
     static let APOD_CELL = "ApodCollectionViewCell"
     static let SHOW_DETAIL = "showDetail"
+    static let SHOW_DETAIL_LANDSCAPE = "showDetailLandScape"
 }

@@ -62,7 +62,9 @@ class DateSelectedView: CustomShowView {
             dateButtonsList.append(buttonSelectView)
             initX += width + spaceX
             i += 1
+            
         }
+        widthGeneralView.constant = initX
         selectIndex(index: indexDefault)
     }
     

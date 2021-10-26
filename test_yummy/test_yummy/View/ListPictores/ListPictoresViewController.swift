@@ -1,6 +1,6 @@
 //
 //  ListPictoresViewController.swift
-//  TestSoyYo
+//  test_yummy
 //
 //  Created by Pedro Alonso Daza B on 6/09/20.
 //  Copyright © 2020 Pedro Alonso Daza B. All rights reserved.
@@ -44,8 +44,11 @@ class ListPictoresViewController: UIViewController {
 
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
-
+        if segue.identifier == Constants.SHOW_DETAIL{
+            if let detailPictoreViewController = segue.destination as? DetailPictoreViewController {
+                detailPictoreViewController.nasaPictore = self.nasaPictore
+            }
+        }
     }
     // MARK: - Actions
     @IBAction func showDatePicker(_ sender: UIButton) {
@@ -67,7 +70,8 @@ extension ListPictoresViewController: UICollectionViewDelegate, UICollectionView
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-
+        self.nasaPictore = self.nasaPictores[indexPath.row]
+        performSegue(withIdentifier: Constants.SHOW_DETAIL, sender: nil)
     }
     
     
@@ -98,7 +102,7 @@ extension ListPictoresViewController: InformationHealthyLifeViewToViewModel {
     }
     
     func showError(error: String) {
-
+        shoeAlertWithMessagge(controller: self, messagge: error)
     }
     
     
