@@ -462,11 +462,39 @@ extension ListPictoresViewModel: InformationHealthyLifeViewModelToView {
 }
 ```
 
+## Depliegue continuo(CD)
+- se contemplo utilizar [fastlane](https://fastlane.tools/) pero al final nos fuimos por [bitrise](https://app.bitrise.io/) por que por medio de cajones por debamos nos construye nuestro documento [fastlane](https://fastlane.tools/)
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+- empezamos con la configuracion del proyecto seleccion del repo y la rama
 
-Please make sure to update tests as appropriate.
+![firebasestorage](https://firebasestorage.googleapis.com/v0/b/testyummy-26178.appspot.com/o/Captura%20de%20Pantalla%202021-10-26%20a%20la(s)%2012.20.37%20a.%C2%A0m..png?alt=media&token=162e5d7a-01f1-4b8b-9365-e4d773ec2cf8)
 
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+![firebasestorage](https://firebasestorage.googleapis.com/v0/b/testyummy-26178.appspot.com/o/Captura%20de%20Pantalla%202021-10-26%20a%20la(s)%2012.21.26%20a.%C2%A0m..png?alt=media&token=b32dbbed-f91e-49fa-ace2-a8f31a9b0896)
+
+- al terminar la configuración encontraremos un dashboard con el resumen de nuestra configuración
+
+![firebasestorage](https://firebasestorage.googleapis.com/v0/b/testyummy-26178.appspot.com/o/Captura%20de%20Pantalla%202021-10-26%20a%20la(s)%2012.22.40%20a.%C2%A0m..png?alt=media&token=b2fe0b65-072f-4c74-b1bd-b123d2e70496)
+
+- posteriormente podemos empezar a gregar cajones que por debajo configuran nuestra fastlane o incluso otras herramientas
+
+- en este caso agregaremos una de [firebase distribution](https://firebase.google.com/?gclid=CjwKCAjwq9mLBhB2EiwAuYdMtU3Cg_kLyrNm1v0lD4kAFiKr2atanP8hXV7_ifKCnyOyJ_uNDFPenBoC8NAQAvD_BwE&gclsrc=aw.ds)
+
+![firebasestorage](https://firebasestorage.googleapis.com/v0/b/testyummy-26178.appspot.com/o/Captura%20de%20Pantalla%202021-10-26%20a%20la(s)%2012.27.45%20a.%C2%A0m..png?alt=media&token=8705c329-f616-484a-a26a-4bb627b0aa65)
+
+- configuramos nuestra consola de firebase
+- agregamos los correos a los que queremos liberar la version qa en develop segun ambiente
+
+![firebasestorage](https://firebasestorage.googleapis.com/v0/b/testyummy-26178.appspot.com/o/Captura%20de%20Pantalla%202021-10-26%20a%20la(s)%201.42.20%20a.%C2%A0m..png?alt=media&token=a937d623-04d9-4ee5-99d4-0dca17d4895c)
+
+- y cada vez que hagamos un pull request a nuestra rama qa tendremos automáticamente un build con las características de workflow ya construidas
+
+![firebasestorage](https://firebasestorage.googleapis.com/v0/b/testyummy-26178.appspot.com/o/Captura%20de%20Pantalla%202021-10-26%20a%20la(s)%201.03.43%20a.%C2%A0m..png?alt=media&token=84fe9885-d648-459b-b3c4-3451557841d7)
+
+- incluso por medio de notificación tambien configurables te avisa si falla
+
+![firebasestorage](https://firebasestorage.googleapis.com/v0/b/testyummy-26178.appspot.com/o/Captura%20de%20Pantalla%202021-10-26%20a%20la(s)%2012.25.10%20a.%C2%A0m..png?alt=media&token=1da43293-e709-4537-9ee6-6a142d73a976)
+
+
+## Video demostrativo
+
+[![IMAGE ALT TEXT HERE](https://firebasestorage.googleapis.com/v0/b/testyummy-26178.appspot.com/o/Captura%20de%20Pantalla%202021-10-26%20a%20la(s)%201.26.50%20a.%C2%A0m..png?alt=media&token=c1844733-42ba-4446-a443-a412b1055dd4)](https://www.youtube.com/watch?v=Aj8FFchdXBU&ab_channel=testcompiler)
