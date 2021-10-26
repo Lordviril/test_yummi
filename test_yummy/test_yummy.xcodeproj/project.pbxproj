@@ -113,7 +113,6 @@
 		0C114ED327279B9A00D7913F /* DetailPictoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPictoreViewController.swift; sourceTree = "<group>"; };
 		0C114ED627279CFE00D7913F /* GradiantView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradiantView.swift; sourceTree = "<group>"; };
 		0C114ED727279CFE00D7913F /* GradiantView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GradiantView.xib; sourceTree = "<group>"; };
-		0C114EDA2727B19000D7913F /* DetailPictoreLandScape.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailPictoreLandScape.storyboard; sourceTree = "<group>"; };
 		1F357434484BCF180FC4E531 /* Pods-test_yummy.debug(dev).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_yummy.debug(dev).xcconfig"; path = "Target Support Files/Pods-test_yummy/Pods-test_yummy.debug(dev).xcconfig"; sourceTree = "<group>"; };
 		1F860F39F3E2BFC6EDF0314A /* Pods_test_yummyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_test_yummyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2678DDCA252A7443712C89BC /* Pods-test_yummy-test_yummyUITests.debug(qa).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_yummy-test_yummyUITests.debug(qa).xcconfig"; path = "Target Support Files/Pods-test_yummy-test_yummyUITests/Pods-test_yummy-test_yummyUITests.debug(qa).xcconfig"; sourceTree = "<group>"; };
@@ -426,7 +425,6 @@
 		0C114ECC27279B3C00D7913F /* DetailPicture */ = {
 			isa = PBXGroup;
 			children = (
-				0C114EDA2727B19000D7913F /* DetailPictoreLandScape.storyboard */,
 				0C114ECD27279B5D00D7913F /* Reusable */,
 				0C114ED227279B9A00D7913F /* DetailPictore.storyboard */,
 				0C114ED327279B9A00D7913F /* DetailPictoreViewController.swift */,
