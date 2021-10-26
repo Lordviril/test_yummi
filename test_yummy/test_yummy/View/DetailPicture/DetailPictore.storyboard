@@ -172,21 +172,21 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="7IW-m2-xeI"/>
                                 <exclude reference="9gt-OP-byY"/>
-                                <exclude reference="5RU-As-nfS"/>
+                                <exclude reference="7IW-m2-xeI"/>
                                 <exclude reference="sld-m6-OaX"/>
+                                <exclude reference="5RU-As-nfS"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
                             <mask key="constraints">
-                                <include reference="7IW-m2-xeI"/>
                                 <exclude reference="7a8-hr-GiF"/>
                                 <include reference="9gt-OP-byY"/>
-                                <include reference="5RU-As-nfS"/>
-                                <exclude reference="eLq-Tf-rCp"/>
+                                <include reference="7IW-m2-xeI"/>
                                 <exclude reference="Pya-xL-5y6"/>
                                 <include reference="sld-m6-OaX"/>
+                                <include reference="5RU-As-nfS"/>
+                                <exclude reference="eLq-Tf-rCp"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">

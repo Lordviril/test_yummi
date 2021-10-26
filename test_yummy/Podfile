@@ -8,6 +8,7 @@ target 'test_yummy' do
   pod 'Alamofire',                            '4.9.0'
   pod 'lottie-ios',                           '3.1.8'
   pod 'SDWebImage',                           '5.6.1'
+  pod 'Firebase/Analytics'
   # Pods for test_yummy
 
   target 'test_yummyTests' do

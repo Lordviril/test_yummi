@@ -30,20 +30,6 @@ public class ApiService {
                 
             }
             
-//            var isCorrect = false;
-//            for status in statusCodeCorrect{
-//                if response.response?.statusCode == status{
-//                    isCorrect = true;
-//                    break
-//                }
-//            }
-//            if isCorrect
-//            {
-//                let result_ = response.data
-//                Ok(result_!)
-//            }else{
-//                //definir errores
-//            }
         }
     }
     
@@ -57,16 +43,7 @@ public class ApiService {
         
         Alamofire.request(url, method: .get, headers: Headers as? HTTPHeaders).responseJSON { response in
             print("::: STATUS CODE \(String(describing: response.response?.statusCode))")
-            /*switch response.result
-            {
-                case .success:
-                    let result = response.data
-                    Ok(result!)
-                case .failure:
-                    let result = response.data
-                    Ok(result!)
-                
-            }*/
+
             
             var isCorrect = false;
             for status in statusCodeCorrect{
