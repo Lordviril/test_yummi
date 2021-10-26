@@ -23,10 +23,10 @@
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M3n-Fa-vj8">
-                                <rect key="frame" x="0.0" y="466" width="414" height="396"/>
+                                <rect key="frame" x="2" y="458" width="414" height="396"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jml-or-iA7">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="286"/>
+                                        <rect key="frame" x="0.0" y="200" width="414" height="286"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQl-qx-PX7">
                                                 <rect key="frame" x="20" y="18" width="374" height="20"/>
@@ -109,10 +109,15 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="Jml-or-iA7" firstAttribute="top" secondItem="M3n-Fa-vj8" secondAttribute="top" id="KTi-7z-cSF"/>
+                                    <constraint firstItem="Jml-or-iA7" firstAttribute="top" secondItem="M3n-Fa-vj8" secondAttribute="top" constant="200" id="KTi-7z-cSF"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="cnW-bi-FLe"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="ZUL-Cx-WcC"/>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="KTi-7z-cSF"/>
+                                    </mask>
+                                </variation>
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Csj-bI-VYc" customClass="CollapserView" customModule="test_yummy" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="414" height="414"/>
@@ -136,21 +141,59 @@
                         <viewLayoutGuide key="safeArea" id="mMw-EL-qkz"/>
                         <color key="backgroundColor" red="0.062745098039215685" green="0.062745098039215685" blue="0.062745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="mMw-EL-qkz" firstAttribute="trailing" secondItem="Csj-bI-VYc" secondAttribute="trailing" id="7a8-hr-GiF"/>
+                            <constraint firstItem="Jml-or-iA7" firstAttribute="leading" secondItem="Csj-bI-VYc" secondAttribute="trailing" constant="41" id="5RU-As-nfS">
+                                <variation key="heightClass=compact" constant="11"/>
+                            </constraint>
+                            <constraint firstItem="Csj-bI-VYc" firstAttribute="bottom" secondItem="mMw-EL-qkz" secondAttribute="bottom" constant="389" id="7IW-m2-xeI">
+                                <variation key="heightClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="mMw-EL-qkz" firstAttribute="trailing" secondItem="Csj-bI-VYc" secondAttribute="trailing" id="7a8-hr-GiF">
+                                <variation key="heightClass=compact" constant="200"/>
+                            </constraint>
+                            <constraint firstItem="mMw-EL-qkz" firstAttribute="leading" secondItem="Csj-bI-VYc" secondAttribute="leading" constant="44" id="9gt-OP-byY">
+                                <variation key="heightClass=compact" constant="0.0"/>
+                            </constraint>
                             <constraint firstItem="mMw-EL-qkz" firstAttribute="trailing" secondItem="M3n-Fa-vj8" secondAttribute="trailing" id="IX4-HN-G4R"/>
                             <constraint firstItem="6ma-AT-tHb" firstAttribute="top" secondItem="mMw-EL-qkz" secondAttribute="top" id="Iuc-I1-r2r"/>
-                            <constraint firstItem="M3n-Fa-vj8" firstAttribute="top" secondItem="6ma-AT-tHb" secondAttribute="bottom" constant="4" id="JpP-IT-s29"/>
                             <constraint firstItem="Csj-bI-VYc" firstAttribute="leading" secondItem="mMw-EL-qkz" secondAttribute="leading" id="MiF-Wl-Ihm"/>
                             <constraint firstItem="M3n-Fa-vj8" firstAttribute="leading" secondItem="mMw-EL-qkz" secondAttribute="leading" id="Pya-xL-5y6"/>
                             <constraint firstItem="mMw-EL-qkz" firstAttribute="trailing" secondItem="fcn-iF-zPi" secondAttribute="trailing" constant="30" id="QA4-vV-WCN"/>
                             <constraint firstItem="mMw-EL-qkz" firstAttribute="bottom" secondItem="M3n-Fa-vj8" secondAttribute="bottom" id="Toy-X6-HZg"/>
                             <constraint firstItem="fcn-iF-zPi" firstAttribute="top" secondItem="mMw-EL-qkz" secondAttribute="top" constant="30" id="VL1-5m-gFC"/>
+                            <constraint firstItem="M3n-Fa-vj8" firstAttribute="top" secondItem="mMw-EL-qkz" secondAttribute="top" constant="32" id="YQw-aL-oBW"/>
                             <constraint firstItem="mMw-EL-qkz" firstAttribute="trailing" secondItem="6ma-AT-tHb" secondAttribute="trailing" id="dBe-5t-tsy"/>
                             <constraint firstItem="Jml-or-iA7" firstAttribute="leading" secondItem="mMw-EL-qkz" secondAttribute="leading" id="eLq-Tf-rCp"/>
                             <constraint firstItem="Csj-bI-VYc" firstAttribute="top" secondItem="mMw-EL-qkz" secondAttribute="top" id="ihY-IA-hNS"/>
                             <constraint firstItem="mMw-EL-qkz" firstAttribute="trailing" secondItem="Jml-or-iA7" secondAttribute="trailing" id="mAx-yU-bhr"/>
+                            <constraint firstItem="M3n-Fa-vj8" firstAttribute="leading" secondItem="Csj-bI-VYc" secondAttribute="trailing" constant="41" id="sld-m6-OaX">
+                                <variation key="heightClass=compact" constant="11"/>
+                            </constraint>
                             <constraint firstItem="6ma-AT-tHb" firstAttribute="leading" secondItem="mMw-EL-qkz" secondAttribute="leading" id="xga-xD-fh3"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="7IW-m2-xeI"/>
+                                <exclude reference="9gt-OP-byY"/>
+                                <exclude reference="5RU-As-nfS"/>
+                                <exclude reference="sld-m6-OaX"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="7IW-m2-xeI"/>
+                                <exclude reference="7a8-hr-GiF"/>
+                                <include reference="9gt-OP-byY"/>
+                                <include reference="5RU-As-nfS"/>
+                                <exclude reference="eLq-Tf-rCp"/>
+                                <exclude reference="Pya-xL-5y6"/>
+                                <include reference="sld-m6-OaX"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="MiF-Wl-Ihm"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="collapserView" destination="Csj-bI-VYc" id="hrf-UX-Prr"/>
@@ -163,7 +206,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="obT-TZ-xDP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="56.521739130434788" y="72.991071428571431"/>
+            <point key="canvasLocation" x="56.25" y="72.463768115942031"/>
         </scene>
     </scenes>
     <resources>

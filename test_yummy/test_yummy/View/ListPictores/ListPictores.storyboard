@@ -66,7 +66,6 @@
                         <outlet property="apodCollectionView" destination="IIe-dh-xBr" id="6aH-El-Y21"/>
                         <outlet property="dateSelectedView" destination="7jE-Wv-3yR" id="ugq-eC-6gX"/>
                         <segue destination="Rdz-qt-lgo" kind="presentation" identifier="showDetail" modalPresentationStyle="fullScreen" id="GLe-aE-6pl"/>
-                        <segue destination="Oze-eI-Z66" kind="presentation" identifier="showDetailLandScape" modalPresentationStyle="fullScreen" id="wnf-BZ-e6E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DZp-Ki-TH7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -82,14 +81,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZMe-h8-6PI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="369" y="-261"/>
-        </scene>
-        <!--DetailPictoreLandScape-->
-        <scene sceneID="dYD-QZ-7l2">
-            <objects>
-                <viewControllerPlaceholder storyboardName="DetailPictoreLandScape" id="Oze-eI-Z66" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aKK-DF-99j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="600" y="-142"/>
         </scene>
     </scenes>
 </document>
