@@ -10,8 +10,8 @@ import UIKit
 
 class ListPictoresViewController: UIViewController {
 
-    @IBOutlet weak var insertDateTextField: UITextField!
     
+    @IBOutlet weak var dateSelectedView: DateSelectedView!
     @IBOutlet weak var apodCollectionView: UICollectionView!
     
     var listPictoresViewModel: ListPictoresViewModel?
@@ -24,14 +24,19 @@ class ListPictoresViewController: UIViewController {
     }
     
     private func setupView() {
+        dateSelectedView.delegate = self
+        
         listPictoresViewModel = ListPictoresViewModel(informationHealthyLifeViewToViewModel: self)
-        listPictoresViewModel?.getListLastPictores(controller: self)
+        listPictoresViewModel?.getListLastPictores(controller: self, dateInit: Date())
         self.tabBarController?.tabBar.isHidden = true
         
         apodCollectionView.delegate = self
         apodCollectionView.dataSource = self
 
         apodCollectionView.register(UINib(nibName: Constants.APOD_CELL, bundle: nil), forCellWithReuseIdentifier: ApodCollectionViewCell.identifier)
+        
+        dateSelectedView.textList = listPictoresViewModel?.getLastTenDates().textList ?? []
+        dateSelectedView.loadViews()
     }
 
     @IBAction func openDatePickerPressed(_ sender: UIButton) {
@@ -99,3 +104,11 @@ extension ListPictoresViewController: InformationHealthyLifeViewToViewModel {
     
 }
 
+// MARK: - DateSelectedViewDelegate
+extension ListPictoresViewController: DateSelectedViewDelegate {
+    func dateSelectedView(didSelectIndex index: Int, text: String) {
+        listPictoresViewModel?.getListLastPictores(controller: self, dateInit: listPictoresViewModel?.getLastTenDates().dates[index] ?? Date())
+    }
+    
+    
+}

@@ -24,10 +24,10 @@ class ListPictoresViewModel {
         return dateFormatterPrint.string(from: date)
     }
     
-    func getLast8Days() -> [Date] {
+    func getLast8Days(date:Date) -> [Date] {
         let cal = NSCalendar.current
         // start with today
-        var date = cal.startOfDay(for: Date())
+        var date = cal.startOfDay(for: date)
 
         var days = [Date]()
 
@@ -43,13 +43,31 @@ class ListPictoresViewModel {
         return days
     }
     
-    func getPictoreDayOfDay(i: Int, nasaPictores: [NASAPictore], ok: @escaping (([NASAPictore]) -> Void)) {
-        let dates = getLast8Days()
+    func getLastTenDates() -> (textList: [String], dates: [Date] ){
+        var days = [Date]()
+        var daysText = [String]()
+        let cal = NSCalendar.current
+        // start with today
+        var date = cal.startOfDay(for: Date())
+        for _ in 1 ... 10 {
+            // get day component:
+
+            days.append(date)
+            daysText.append(getDateFormat(date: date))
+
+            date = cal.date(byAdding: .day, value: -8, to: date)!
+        }
+        
+        return (daysText, days)
+    }
+    
+    func getPictoreDayOfDay(i: Int, nasaPictores: [NASAPictore], dateInit: Date, ok: @escaping (([NASAPictore]) -> Void)) {
+        let dates = getLast8Days(date: dateInit)
         var nasaPictores1 = nasaPictores
         getPictoreOfDate(date: dates[i], ok: {nasaPictore in
             if i < 7 {
                 nasaPictores1.append(nasaPictore)
-                self.getPictoreDayOfDay(i: i + 1, nasaPictores : nasaPictores1, ok:  { nasaPictore1 in
+                self.getPictoreDayOfDay(i: i + 1, nasaPictores : nasaPictores1, dateInit: dateInit, ok:  { nasaPictore1 in
                     
                     })
             } else {
@@ -85,11 +103,11 @@ class ListPictoresViewModel {
 
 extension ListPictoresViewModel: InformationHealthyLifeViewModelToView {
     
-    func getListLastPictores(controller:UIViewController) {
+    func getListLastPictores(controller:UIViewController, dateInit: Date ) {
 
         let nasaPictores = [NASAPictore]()
         SwiftSpinner.show()
-        getPictoreDayOfDay(i: 0, nasaPictores: nasaPictores, ok: { nasaPictores1 in
+        getPictoreDayOfDay(i: 0, nasaPictores: nasaPictores, dateInit: dateInit, ok: { nasaPictores1 in
             //
         })
         

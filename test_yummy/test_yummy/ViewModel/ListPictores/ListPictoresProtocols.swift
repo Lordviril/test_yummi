@@ -18,6 +18,6 @@ protocol InformationHealthyLifeViewToViewModel {
 }
 
 protocol InformationHealthyLifeViewModelToView:class {
-    func getListLastPictores(controller:UIViewController)
+    func getListLastPictores(controller:UIViewController, dateInit: Date)
     func getPictores(controller:UIViewController, datePictores: Date)
 }

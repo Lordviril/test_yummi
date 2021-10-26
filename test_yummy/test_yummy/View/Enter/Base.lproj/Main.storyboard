@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,6 +14,8 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TmM-tw-adO">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pf8-Nk-2oi"/>
@@ -32,13 +33,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ybb-Lj-a6V" customClass="CustomButton" customModule="TestSoyYo" customModuleProvider="target">
-                                <rect key="frame" x="153.5" y="451" width="107" height="48"/>
-                                <color key="backgroundColor" systemColor="linkColor"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Gny-dQ-WgT">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ybb-Lj-a6V" customClass="CustomButton">
+                                <rect key="frame" x="192" y="451" width="30" height="48"/>
+                                <color key="backgroundColor" red="0.96078431372549022" green="0.3529411764705882" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="vhx-YR-qV6"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="0.0"/>
                                 <state key="normal" title="    INGRESAR    ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -53,9 +57,13 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Gny-dQ-WgT" secondAttribute="bottom" id="3LG-ce-OkQ"/>
                             <constraint firstItem="Ybb-Lj-a6V" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="7rs-5l-5Y1"/>
+                            <constraint firstItem="Gny-dQ-WgT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8hI-Tn-IvM"/>
+                            <constraint firstItem="Gny-dQ-WgT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="U0i-BW-j4s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gny-dQ-WgT" secondAttribute="trailing" id="XHZ-yn-gCY"/>
                             <constraint firstItem="Ybb-Lj-a6V" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="il7-lx-htW"/>
                         </constraints>
                     </view>
@@ -76,12 +84,12 @@
             <point key="canvasLocation" x="717" y="-38"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="Ybb-Lj-a6V">
+            <size key="intrinsicContentSize" width="30" height="12"/>
+        </designable>
+    </designables>
     <resources>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="background" width="542" height="813"/>
     </resources>
 </document>

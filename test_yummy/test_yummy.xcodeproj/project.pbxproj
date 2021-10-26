@@ -30,6 +30,14 @@
 		0C114E9427264B0D00D7913F /* dev.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 0C114E9227264B0D00D7913F /* dev.xcconfig */; };
 		0C114EA927264EA600D7913F /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C114EA827264EA500D7913F /* ApiService.swift */; };
 		0C114EAB27264EB300D7913F /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C114EAA27264EB300D7913F /* ApiResponse.swift */; };
+		0C114EB0272657A400D7913F /* CustomShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C114EAF272657A400D7913F /* CustomShowView.swift */; };
+		0C114EB22726588400D7913F /* DateSelectedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C114EB12726588400D7913F /* DateSelectedView.swift */; };
+		0C114EB42726589500D7913F /* DateSelectedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C114EB32726589500D7913F /* DateSelectedView.xib */; };
+		0C114EBC2726EFB700D7913F /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C114EBB2726EFB700D7913F /* CustomButton.swift */; };
+		0C114EBE2726EFE200D7913F /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C114EBD2726EFE200D7913F /* UIImageView+Extensions.swift */; };
+		0C114EC5272736D700D7913F /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C114EC4272736D700D7913F /* CustomView.swift */; };
+		0C114EC6272744DC00D7913F /* ButtonSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C114EC32727051900D7913F /* ButtonSelectView.swift */; };
+		0C114EC727277FF300D7913F /* ButtonSelectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C114EC22727051800D7913F /* ButtonSelectView.xib */; };
 		3A5F078A58DDACF67238F168 /* Pods_test_yummy_test_yummyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D554810E4F785CB40E9975A2 /* Pods_test_yummy_test_yummyUITests.framework */; };
 		DFE77546B8B67CB317BACE5F /* Pods_test_yummy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 598EC9C31CA121686EE08835 /* Pods_test_yummy.framework */; };
 		EBDAFC0D29B28DC010BB5DD8 /* Pods_test_yummyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F860F39F3E2BFC6EDF0314A /* Pods_test_yummyTests.framework */; };
@@ -83,6 +91,14 @@
 		0C114E9527264C5800D7913F /* qa.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = qa.xcconfig; sourceTree = "<group>"; };
 		0C114EA827264EA500D7913F /* ApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		0C114EAA27264EB300D7913F /* ApiResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
+		0C114EAF272657A400D7913F /* CustomShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShowView.swift; sourceTree = "<group>"; };
+		0C114EB12726588400D7913F /* DateSelectedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelectedView.swift; sourceTree = "<group>"; };
+		0C114EB32726589500D7913F /* DateSelectedView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateSelectedView.xib; sourceTree = "<group>"; };
+		0C114EBB2726EFB700D7913F /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		0C114EBD2726EFE200D7913F /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		0C114EC22727051800D7913F /* ButtonSelectView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonSelectView.xib; sourceTree = "<group>"; };
+		0C114EC32727051900D7913F /* ButtonSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSelectView.swift; sourceTree = "<group>"; };
+		0C114EC4272736D700D7913F /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		1F357434484BCF180FC4E531 /* Pods-test_yummy.debug(dev).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_yummy.debug(dev).xcconfig"; path = "Target Support Files/Pods-test_yummy/Pods-test_yummy.debug(dev).xcconfig"; sourceTree = "<group>"; };
 		1F860F39F3E2BFC6EDF0314A /* Pods_test_yummyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_test_yummyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2678DDCA252A7443712C89BC /* Pods-test_yummy-test_yummyUITests.debug(qa).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_yummy-test_yummyUITests.debug(qa).xcconfig"; path = "Target Support Files/Pods-test_yummy-test_yummyUITests/Pods-test_yummy-test_yummyUITests.debug(qa).xcconfig"; sourceTree = "<group>"; };
@@ -211,6 +227,7 @@
 		0C114E6E272637B700D7913F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0C114EAD2726563900D7913F /* Reusable */,
 				0C114EAC272651CB00D7913F /* Enter */,
 				0C114E802726471000D7913F /* ListPictores */,
 			);
@@ -220,6 +237,8 @@
 		0C114E6F272637C500D7913F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				0C114EBD2726EFE200D7913F /* UIImageView+Extensions.swift */,
+				0C114EBA2726EF9D00D7913F /* Components */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -346,6 +365,43 @@
 				0C114E412726327900D7913F /* Main.storyboard */,
 			);
 			path = Enter;
+			sourceTree = "<group>";
+		};
+		0C114EAD2726563900D7913F /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				0C114EAE2726565400D7913F /* DateSelected */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		0C114EAE2726565400D7913F /* DateSelected */ = {
+			isa = PBXGroup;
+			children = (
+				0C114EBF272704CF00D7913F /* ButtonSelect */,
+				0C114EB12726588400D7913F /* DateSelectedView.swift */,
+				0C114EB32726589500D7913F /* DateSelectedView.xib */,
+			);
+			path = DateSelected;
+			sourceTree = "<group>";
+		};
+		0C114EBA2726EF9D00D7913F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0C114EAF272657A400D7913F /* CustomShowView.swift */,
+				0C114EC4272736D700D7913F /* CustomView.swift */,
+				0C114EBB2726EFB700D7913F /* CustomButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0C114EBF272704CF00D7913F /* ButtonSelect */ = {
+			isa = PBXGroup;
+			children = (
+				0C114EC32727051900D7913F /* ButtonSelectView.swift */,
+				0C114EC22727051800D7913F /* ButtonSelectView.xib */,
+			);
+			path = ButtonSelect;
 			sourceTree = "<group>";
 		};
 		4B476A410AA9CFE3792FF828 /* Pods */ = {
@@ -491,6 +547,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C114EB42726589500D7913F /* DateSelectedView.xib in Resources */,
 				0C114E9327264B0D00D7913F /* prod.xcconfig in Resources */,
 				0C114E852726473700D7913F /* ApodCollectionViewCell.xib in Resources */,
 				0C114E9427264B0D00D7913F /* dev.xcconfig in Resources */,
@@ -498,6 +555,7 @@
 				0C114E452726327B00D7913F /* Assets.xcassets in Resources */,
 				0C114E88272647E500D7913F /* ListPictores.storyboard in Resources */,
 				0C114E792726391400D7913F /* hello.json in Resources */,
+				0C114EC727277FF300D7913F /* ButtonSelectView.xib in Resources */,
 				0C114E432726327900D7913F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -630,13 +688,19 @@
 				0C114E8E272648F600D7913F /* ListPictoresViewModel.swift in Sources */,
 				0C114EA927264EA600D7913F /* ApiService.swift in Sources */,
 				0C114E402726327900D7913F /* ViewController.swift in Sources */,
+				0C114EC6272744DC00D7913F /* ButtonSelectView.swift in Sources */,
+				0C114EB0272657A400D7913F /* CustomShowView.swift in Sources */,
 				0C114E8D272648F600D7913F /* ListPictoresProtocols.swift in Sources */,
 				0C114EAB27264EB300D7913F /* ApiResponse.swift in Sources */,
+				0C114EC5272736D700D7913F /* CustomView.swift in Sources */,
+				0C114EB22726588400D7913F /* DateSelectedView.swift in Sources */,
 				0C114E902726491500D7913F /* NASAPictore.swift in Sources */,
 				0C114E842726473700D7913F /* ApodCollectionViewCell.swift in Sources */,
 				0C114E3C2726327900D7913F /* AppDelegate.swift in Sources */,
 				0C114E3E2726327900D7913F /* SceneDelegate.swift in Sources */,
+				0C114EBE2726EFE200D7913F /* UIImageView+Extensions.swift in Sources */,
 				0C114E7D2726399800D7913F /* RouteURL.swift in Sources */,
+				0C114EBC2726EFB700D7913F /* CustomButton.swift in Sources */,
 				0C114E89272647E500D7913F /* ListPictoresViewController.swift in Sources */,
 				0C114E7F2726399800D7913F /* Constants.swift in Sources */,
 			);
